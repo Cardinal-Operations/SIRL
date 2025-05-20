@@ -4,9 +4,7 @@ import re
 def enforce_integer_variables(code):
     """
     This function modifies the code to ensure that all variables created using
-    addVar or addVars are of type GRB.INTEGER. It does this by searching for
-    the addVar or addVars function calls and adding vtype=GRB.INTEGER to the
-    parameters if it is not already present.
+    addVar or addVars are of type GRB.INTEGER.
     """
     # match the addVar or addVars function call
     pattern = r'(\w+\s*=\s*\w+\.addVar[s]?)\(([\s\S]*?)(\)\n)'
@@ -20,7 +18,6 @@ def enforce_integer_variables(code):
         if re.search(r'\bvtype\s*=', params):
             return match.group(0)
         
-        # 处理参数
         if params:
             # if there are parameters, add vtype=GRB.INTEGER to the end
             if not params.endswith(','):
