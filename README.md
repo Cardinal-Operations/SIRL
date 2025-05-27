@@ -29,11 +29,11 @@ We introduce **SIRL (Solver-Informed Reinforcement Learning)**, a novel reasonin
 Particulary, we proposed surrogate function design with the **Partial-KL** strategy, which selectively applies the KL penalty to the mathematical formulation $\mathbf{z}^{m-1}$ and solver code $\mathbf{z}^{m}$ segments.
 The **Partial-KL** strategy, distinct from GRPO and DAPO, effectively balances mathematical reasoning diversity with code execution rigor, showing promise for extension to tasks like AIME (math) and CodeForce (code).
 
-<img src="https://github.com/user-attachments/assets/ffd2134d-74a8-4850-8995-2dbea98d7605" style="width: 75%;">
+<img src=https://github.com/Cardinal-Operations/SIRL/blob/main/pic/question.png style="width: 75%;">
 
-<img src="https://github.com/user-attachments/assets/bce8e135-6587-4a89-8aac-814f6836100d" style="width: 75%;">
+<img src=https://github.com/Cardinal-Operations/SIRL/blob/main/pic/prompt.png style="width: 75%;">
 
-<img src="https://github.com/user-attachments/assets/08c23c75-ae2e-4d03-9d87-e645844bfe24" style="width: 75%;">
+<img src=https://github.com/Cardinal-Operations/SIRL/blob/main/pic/answer.png style="width: 75%;">
 
 
 ## Updates
