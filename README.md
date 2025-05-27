@@ -22,10 +22,12 @@
 
 
 ## Overview & Examples
-We introduce **SIRL (Solver-Informed Reinforcement Learning)**, a novel reasoning paradigm that integrates solver feedback with reinforcement learning to train large language models (LLMs) for optimization modeling. This approach represents the first application of Reinforcement Learning with Verifiable Reward (RLVR) in the domain of optimization modeling, enabling LLMs to generate accurate mathematical formulations and code generations from natural language descriptions. SIRL leverages solver outputs to iteratively refine model performance, achieving state-of-the-art results on complex optimization tasks. The framework is particularly effective for industrial and operational research problems, where precise mathematical modeling is critical.
+We introduce **SIRL (Solver-Informed Reinforcement Learning)**, a novel reasoning paradigm that integrates solver feedback with reinforcement learning to train large language models (LLMs) for optimization modeling and release the first reasoning model for optimization modeling--- **SIRL-Qwen2.5-7B**. 
 
-Particulary, we proposed surrogate function design with the Partial-KL strategy, which selectively applies the KL penalty to the mathematical formulation $\mathbf{z}^{m-1}$ and solver code $\mathbf{z}^{m}$ segments.
-The Partial-KL strategy, distinct from GRPO and DAPO, effectively balances mathematical reasoning diversity with code execution rigor, showing promise for extension to tasks like AIME (math) and CodeForce (code).
+**SIRL** represents the first application of Reinforcement Learning with Verifiable Reward (RLVR) in the domain of optimization modeling, enabling LLMs to generate accurate mathematical formulations and code generations from natural language descriptions. SIRL leverages solver outputs to iteratively refine model performance, achieving state-of-the-art results on complex optimization tasks. The framework is particularly effective for industrial and operational research problems, where precise mathematical modeling is critical.
+
+Particulary, we proposed surrogate function design with the **Partial-KL** strategy, which selectively applies the KL penalty to the mathematical formulation $\mathbf{z}^{m-1}$ and solver code $\mathbf{z}^{m}$ segments.
+The **Partial-KL** strategy, distinct from GRPO and DAPO, effectively balances mathematical reasoning diversity with code execution rigor, showing promise for extension to tasks like AIME (math) and CodeForce (code).
 
 <img src="https://github.com/user-attachments/assets/ffd2134d-74a8-4850-8995-2dbea98d7605" style="width: 75%;">
 
@@ -153,7 +155,7 @@ An example from NL4OPT:
 
 
 ## Citation
-If you find SILR useful or relevant to your research, please consider citing our paper:
+If you find our work useful or relevant to your research, please consider citing our paper:
 
 ```bibtex
 @article{chen2025solver,
