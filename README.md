@@ -22,7 +22,7 @@
 
 
 ## Overview & Examples
-We introduce **SIRL (Solver-Informed Reinforcement Learning)**, a novel reasoning paradigm that integrates solver feedback with reinforcement learning to train large language models (LLMs) for optimization modeling and release the first reasoning model for optimization modeling--- **SIRL-Qwen2.5-7B**. 
+We introduce **SIRL (Solver-Informed Reinforcement Learning)**, a novel reasoning paradigm that integrates solver feedback with reinforcement learning to train large language models (LLMs) for optimization modeling, and **SIRL-Qwen2.5-7B**, the first reasoning model for optimization modeling. 
 
 **SIRL** represents the first application of Reinforcement Learning with Verifiable Reward (RLVR) in the domain of optimization modeling, enabling LLMs to generate accurate mathematical formulations and code generations from natural language descriptions. SIRL leverages solver outputs to iteratively refine model performance, achieving state-of-the-art results on complex optimization tasks. The framework is particularly effective for industrial and operational research problems, where precise mathematical modeling is critical.
 
