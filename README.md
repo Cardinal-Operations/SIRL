@@ -15,8 +15,8 @@
     </p> -->
     <p align="center" style="white-space: nowrap;">
         <a href="https://arxiv.org/abs/2505.11792" style="display: inline-block;"><img src='https://img.shields.io/badge/Paper-SIRL-red'></a>
-        <a href="[https://huggingface.co/chenyitian-shanshu/SIRL](https://huggingface.co/chenyitian-shanshu/SIRL)" style="display: inline-block;"><img src='https://img.shields.io/badge/Model-%F0%9F%A4%97%20HuggingFace-yellow'></a>
-        <a href="[https://modelscope.cn/models/oneday88/SIRL-7B](https://modelscope.cn/models/oneday88/SIRL-7B)" style="display: inline-block;"><img src="https://img.shields.io/static/v1?label=Model&message=ModeScope&color=green"></a>
+        <a href="https://huggingface.co/chenyitian-shanshu/SIRL" style="display: inline-block;"><img src='https://img.shields.io/badge/Model-%F0%9F%A4%97%20HuggingFace-yellow'></a>
+        <a href="https://modelscope.cn/models/oneday88/SIRL-7B" style="display: inline-block;"><img src="https://img.shields.io/static/v1?label=Model&message=ModeScope&color=green"></a>
     </p>
 </p>
 
