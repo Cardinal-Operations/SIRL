@@ -65,8 +65,8 @@ The performance metrics for [SIRL](https://huggingface.co/chenyitian-shanshu/SIR
 | Offline-learning | ORLM-LLaMA-3-8B | 85.7%* | 82.3%*    | 37.4%*       | 24.0%*     | 2.6%*   | 51.1%* | 47.2%*    |
 |               | LLMOpt-Qwen2.5-14B | 80.3%* | 89.5%*    | 44.1%*       | 29.0%*     | 12.5%*  | 53.8%* | 51.1%*    |
 |               | OptMATH-Qwen2.5-7B | 94.7%* | 86.5%*    | 51.2%*       | 20.0%*     | 24.4%*  | 57.9%* | 55.8%*    |
-| Online-RL     | SIRL-Qwen2.5-7B   | **96.3%**  | **90.0%**  | **62.1%**     | **33.0%**   | 29.0%  | 58.0%* | **61.4%**     |
-|               | SIRL-Qwen2.5-7B(pass@8) | 97.1%* | 90.2%* | 63.5%* | 38.0%* | 33.2%* | 62.5%* | 64.1%* |
+| Online-RL     | SIRL-Qwen2.5-7B   | **96.3%**  | **90.0%**  | **62.1%**     | **33.0%**   | 29.0%  | *58.0%* | **61.4%**     |
+|               | SIRL-Qwen2.5-7B(pass@8) | 97.1% | 90.2% | 63.5% | 38.0% | 33.2% | 62.5% | 64.1% |
 
 *Note:* Values marked with "*" are from original or reproduced papers with the criterion: relative error < 10⁻⁶. 
 
