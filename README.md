@@ -51,21 +51,22 @@ We release the checkpoint of [SIRL-Qwen2.5-7B](https://huggingface.co/chenyitian
 
 ## Performance
 
-We evaluated the performance of the proposed SIRL framework on four benchmarks: NL4OPT, MAMO, IndustryOR and OptMATH. 
+We evaluated the performance of the proposed SIRL framework on four benchmarks: NL4OPT, MAMO, IndustryOR, OptMATH and OptiBench. 
 Performance is assessed based on the pass@1 accuracy(acc). Following the rigorous evaluation protocol proposed by OptMATH, a solution is considered valid if the relative error is less than 1e-6.
 The performance metrics for [SIRL](https://huggingface.co/chenyitian-shanshu/SIRL) are as follows. The highest results are highlighted in bold.
 
-| Types         | Models            | NL4OPT | MAMO Easy | MAMO Complex | IndustryOR | OptMATH | Macro AVG |
-|---------------|-------------------|--------|-----------|--------------|------------|---------|-----------|
-| Baseline      | GPT-3.5-turbo     | 78.0%* | 79.3%*    | 33.2%*       | 21.0%*     | 15.0%*  | 45.3%*    |
-|               | GPT-4             | 89.0%* | 87.3%*    | 49.3%*       | 33.0%*     | 16.6%*  | 55.0%*    |
-|               | Deepseek-V3       | 95.9%* | 88.3%*    | 51.1%*       | **37.0%***     | **32.6%***  | 61.0%*    |
-| Agent-based   | Chain-of-Experts  | 64.2%* | 77.2%*    | 43.6%*       | 31.0%*     | 20.2%*  | 49.4%*    |
-|               | OptiMUS           | 78.8%* | 82.3%*    | 37.4%*       | 24.0%*     | 2.6%*   | 46.4%*    |
-| Offline-learning | ORLM-LLaMA-3-8B | 85.7%* | 82.3%*    | 37.4%*       | 24.0%*     | 2.6%*   | 46.4%*    |
-|               | LLMOpt-Qwen2.5-14B | 91.3%* | 89.5%*    | 44.1%*       | 29.0%*     | 12.5%*  | 51.1%*    |
-|               | OptMATH-Qwen2.5-7B | 90.2%* | 86.5%*    | 51.2%*       | 20.0%*     | 24.4%*  | 55.4%*    |
-| Online-RL     | SIRL-Qwen2.5-7B   | **96.3%**  | **90.0%**     | **62.1%**        | **33.0%**      | 29.0%   | **62.1%**     |
+| Types         | Models            | NL4OPT | MAMO Easy | MAMO Complex | IndustryOR | OptMATH | OptiBench | Macro AVG |
+|---------------|-------------------|--------|-----------|--------------|------------|---------|-----------|-----------|
+| Baseline      | GPT-3.5-turbo     | 78.0%* | 79.3%*    | 33.2%*       | 21.0%*     | 15.0%*  | 47.4%*   | 51.4%*    |
+|               | GPT-4             | 89.0%* | 87.3%*    | 49.3%*       | 33.3%*     | 16.6%*  | 68.6%* | 57.4%*    |
+|               | Deepseek-V3       | 95.9%* | 88.3%*    | 51.1%*       | **37.0%*** | **32.6%***  | 71.6%* | 62.8%*    |
+| Agent-based   | Chain-of-Experts  | 64.2%* | 77.2%*    | 43.6%*       | 31.0%*     | 20.2%*  | * |    49.4%*    |
+|               | OptiMUS           | 78.8%* | 77.0%*    | 43.6%*       | 31.0%*     | 20.2%*   | 45.8%* | 49.4%*    |
+| Offline-learning | ORLM-LLaMA-3-8B | 85.7%* | 82.3%*    | 37.4%*       | 24.0%*     | 2.6%*   | 51.1%* | 47.2%*    |
+|               | LLMOpt-Qwen2.5-14B | 80.3%* | 89.5%*    | 44.1%*       | 29.0%*     | 12.5%*  | 53.8%* | 51.1%*    |
+|               | OptMATH-Qwen2.5-7B | 94.7%* | 86.5%*    | 51.2%*       | 20.0%*     | 24.4%*  | 57.9%* | 55.8%*    |
+| Online-RL     | SIRL-Qwen2.5-7B   | **96.3%**  | **90.0%**  | **62.1%**     | **33.0%**   | 29.0%  | 58.0%* | **61.4%**     |
+|               | SIRL-Qwen2.5-7B(pass@8) | 97.1%* | 90.2%* | 63.5%* | 38.0%* | 33.2%* | 62.5%* | 64.1%* |
 
 *Note:* Values marked with "*" are from original or reproduced papers with the criterion: relative error < 10⁻⁶. 
 
