@@ -1,6 +1,8 @@
 
 import json
 import re
+import textwrap
+
 def enforce_integer_variables(code):
     """
     This function modifies the code to ensure that all variables created using
@@ -47,30 +49,14 @@ def change_variable_types(str_log):
     # and we need to change them to integer
     else:
         return enforce_integer_variables(str_log)
-    
-def insert_print(code: str, solver_name: str) -> str:
-    # match the model.optimize() or model.solve() line
-    model_pattern = r'^(\s*)(\w+)\.(optimize|solve)\(\)'
-    model_match = re.search(model_pattern, code, re.M)
-    if model_match:
-        indent = model_match.group(1)  # get indentation
-        model_name = model_match.group(2)  # get model name
-        # insert print statement after the model.optimize() or model.solve() line
-        if solver_name == "gurobi":
-            pattern = r'^(\s*)(' + model_name + r'\.optimize\(\))'
-            status_check = (
-                f"{indent}if {model_name}.status == GRB.OPTIMAL:\n"
-                f"{indent}    print(f'Just print the best solution: {{{model_name}.ObjVal}}')\n"
-                f"{indent}else:\n"
-                f"{indent}    print('No optimal solution found, status:', {model_name}.status)"
-            )
-        # use re to match the pattern and keep the indent
-        code = re.sub(pattern, rf'\1\2\n{status_check}', code, flags=re.M)
-        
-    return code
 
+def dedent(code: str, n: int = 1) -> str:
+    lines = code.splitlines()
+    prefix = lines[:n]
+    rest = textwrap.dedent('\n'.join(lines[n:]))
+    return '\n'.join(prefix + [rest])
 
-def extract_code_block(llm_output: str,solver_name) -> str:
+def extract_code_block(llm_output: str) -> str:
     """
     to extract code block
     """
@@ -78,21 +64,23 @@ def extract_code_block(llm_output: str,solver_name) -> str:
     match = re.search(pattern, llm_output, re.DOTALL)
     if match:
         code = match.group(1).strip()
-        if '```' in code:  # the code block may be in ```python ``` format
-            pattern = r'```python(.*?)```'
-            match = re.search(pattern, code, re.DOTALL)
+        pattern = r'```python(.*?)```'
+        if len(code) < 20:
+            match = re.search(pattern,llm_output,re.DOTALL)
             if match:
                 code = match.group(1).strip()
-        code = insert_print(code, solver_name)
-        return code
+        else:
+            match = re.search(pattern,code,re.DOTALL)
+            if match:
+                code = match.group(1).strip()
+        return dedent(code)
     # the python code block is not in <python> </python> format
     # try to extract it using ```python ``` format
     pattern = r'```python(.*?)```'
     match = re.search(pattern, llm_output, re.DOTALL)
     if match:
         code = match.group(1).strip()
-        code = insert_print(code,solver_name)
-        return code
+        return dedent(code)
     return None
 
 def extract_obj(str_log):

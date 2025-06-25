@@ -18,8 +18,6 @@ Carefully analyze the problem to identify decision variables, objective, and con
     The output must be in Markdown format, with each step enclosed in the specified tags.
     """,
 "user": f"""
-Solve the following mathmetical modeling problem
-{{question}}
-think step by step.
+Solve the following mathmetical modeling problem.
 """
     }
