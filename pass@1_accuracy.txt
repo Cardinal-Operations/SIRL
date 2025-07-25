@@ -1,1 +1,0 @@
-pass@1 accuracy for dataset NL4OPT.jsonl: 218/245 = 0.889795918367347
