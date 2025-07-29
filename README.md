@@ -75,7 +75,8 @@ The performance metrics for [SIRL](https://huggingface.co/chenyitian-shanshu/SIR
 
 *Note:* Values marked with "*" are from original or reproduced papers with the criterion: relative error < 10⁻⁶. 
 
-The code to reproduce these results can be found in our [Jupyter Notebook](https://github.com/Cardinal-Operations/SIRL/blob/main/reproduce.ipynb).
+The code to reproduce the results of Gurobi version can be found in our [Jupyter Notebook for gurobi](https://github.com/Cardinal-Operations/SIRL/blob/main/reproduce_gurobi.ipynb).
+The code to reproduce the results of COPT version can be found in our [Jupyter Notebook for COPT](https://github.com/Cardinal-Operations/SIRL/blob/main/reproduce_copt.ipynb).
 
 ## Inference
 
