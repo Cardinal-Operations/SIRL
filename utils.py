@@ -61,11 +61,28 @@ def insert_print(code: str, solver_name: str) -> str:
             status_check = (
                 f"{indent}if {model_name}.status == GRB.OPTIMAL:\n"
                 f"{indent}    print(f'Just print the best solution: {{{model_name}.ObjVal}}')\n"
+                f"{indent}    print('Just print the best sol:[', end = '')\n"
+                f"{indent}    for var in {model_name}.getVars():\n"
+                f"{indent}        print(f'{{var.X}}', end = ',')\n"
+                f"{indent}    print(']')\n"
                 f"{indent}else:\n"
                 f"{indent}    print('No optimal solution found, status:', {model_name}.status)"
             )
         # use re to match the pattern and keep the indent
+        elif solver_name == "copt":
+            pattern = r'^(\s*)(' + model_name + r'\.solve\(\))'
+            status_check = (
+                f"{indent}if {model_name}.status == COPT.OPTIMAL:\n"
+                f"{indent}    print(f'Just print the best obj: {{{model_name}.ObjVal}}')\n"
+                f"{indent}    print('Just print the best sol:[', end = '')\n"
+                f"{indent}    for var in {model_name}.getVars():\n"
+                f"{indent}        print(f'{{var.X}}', end = ',')\n"
+                f"{indent}    print(']')\n"
+                f"{indent}else:\n"
+                f"{indent}    print('No optimal solution found, status:', {model_name}.status)"
+            )
         code = re.sub(pattern, rf'\1\2\n{status_check}', code, flags=re.M)
+
         
     return code
 
@@ -95,10 +112,14 @@ def extract_code_block(llm_output: str,solver_name) -> str:
         return code
     return None
 
-def extract_obj(str_log):
+def extract_obj(str_log,solver_name):
     """Extract objective value from log string"""
-    if 'Just print the best solution:' in str_log:
+    if solver_name == 'gurobi' and 'Just print the best solution:' in str_log:
         item = next(i for i in str_log.split('\n') if 'Just print the best solution:' in i)
+        result = re.findall(r'-?\d+\.?\d*', item)
+        return float(result[0]) if result else None
+    if solver_name == 'copt' and 'Just print the best obj:' in str_log:
+        item = next(i for i in str_log.split('\n') if 'Just print the best obj:' in i)
         result = re.findall(r'-?\d+\.?\d*', item)
         return float(result[0]) if result else None
     return None
