@@ -103,6 +103,8 @@ from vllm import SamplingParams, LLM
 from langchain.prompts import PromptTemplate
 import subprocess
 
+sovler_name = 'gurobi'
+# solver_name = 'copt'
 # Load model and parameters for Gurobi
 model = LLM("chenyitian-shanshu/SIRL-Gurobi",            
             tensor_parallel_size=1,
@@ -146,9 +148,9 @@ prompt =[{"role": "system",
 text = tokenizer.apply_chat_template(prompt, tokenize=False, add_generation_prompt=True)
 response = model.generate(text,sampling_params)
 response_text = response[0].outputs[0].text
-code_snippet = extract_code_block(response_text,'gurobi')
+code_snippet = extract_code_block(response_text,sovler_name)
 result = subprocess.run(['python3', '-c', code_snippet], capture_output=True, text=True, timeout=100)
-obj = extract_obj(result.stdout)
+obj = extract_obj(result.stdout,solver_name)
 print(response_text)
 print('optimal value is', obj)
 ```
