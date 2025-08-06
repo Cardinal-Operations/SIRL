@@ -37,13 +37,15 @@ To explore its full functionalities or to request a trial, please visit the offi
 
 ## Updates
 
-- **2025.07.28** - [SIRL-Qwen2.5-7B-COPT](https://huggingface.co/chenyitian-shanshu/SIRL/tree/main/Copt) ,which leverages the COPT optimization solver, is publicly available on Hugging Face and ModelScope
-- **2025.05.20** - [SIRL-Qwen2.5-7B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL/tree/main) ,which leverages the Gurobi optimization solver, is publicly available on Hugging Face and ModelScope
+- **2025.07.28** - [SIRL-Qwen2.5-7B-COPT](https://huggingface.co/chenyitian-shanshu/SIRL/tree/main/Copt) ,which leverages the COPT optimization solver, is publicly available on Hugging Face and ModelScope.
+- **2025.05.20** - [SIRL-Qwen2.5-7B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL/tree/main) ,which leverages the Gurobi optimization solver, is publicly available on Hugging Face and ModelScope.
 - **2025.05.17** - SIRL paper published on arXiv: [Solver-Informed Reinforcement Learning for Optimization Modeling](https://arxiv.org/abs/2505.11792).
 
 ## Model Release
 
-We release the checkpoint of [SIRL-Qwen2.5-7B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL) and [SIRL-Qwen2.5-7B-COPT](https://huggingface.co/chenyitian-shanshu/SIRL/tree/main/Copt) on Hugging Face and Model Scope. More models are coming soon.
+We release the checkpoint of [SIRL-Qwen2.5-7B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL) and [SIRL-Qwen2.5-7B-COPT](https://huggingface.co/chenyitian-shanshu/SIRL/tree/main/Copt) on Hugging Face and Model Scope. 
+We will soon be introducing new models, including a 32B-level model that has been shown to outperform DeepSeek-V3 and achieve performance on par with powerful LRMs like DeepSeek-R1 and OpenAI-O3.
+
 
 | Solver Type          | Hugging Face      | ModelScope |
 |---------------------|---------------- | ---|
@@ -68,15 +70,17 @@ The performance metrics for [SIRL](https://huggingface.co/chenyitian-shanshu/SIR
 | Offline-learning | ORLM-LLaMA-3-8B | 85.7%* | 82.3%*    | 37.4%*       | 24.0%*     | 2.6%*   | 51.1%* | 47.2%*    |
 |               | LLMOpt-Qwen2.5-14B | 80.3%* | 89.5%*    | 44.1%*       | 29.0%*     | 12.5%*  | 53.8%* | 51.1%*    |
 |               | OptMATH-Qwen2.5-7B | 94.7%* | 86.5%*    | 51.2%*       | 20.0%*     | 24.4%*  | 57.9%* | 55.8%*    |
-| Gurobi     | SIRL-Qwen2.5-7B-Gurobi   | **96.3%**  | **90.0%**  | 62.1%     | **33.0%**   | 29.0%  | 58.0% | 61.4%     |
+| Gurobi-7B     | SIRL-Qwen2.5-7B-Gurobi   | **96.3%**  | **90.0%**  | 62.1%     | **33.0%**   | 29.0%  | 58.0% | 61.4%     |
 |               | SIRL-Qwen2.5-7B-Gurobi(pass@8) | 97.1% | 90.2% | 63.5% | 38.0% | 33.2% | 62.5% | 64.1% |
-| COPT            | SIRL-Qwen2.5-7B-COPT| 95.1% | 89.3% | **68.2%** | 31.0% | **33.7%** | 58.3% | **62.6%** |
+|  Gruobi-32B             | SIRL-Qwen2.5-32B-Gurobi(pass@1) | 97.1% | 88.8% | 65.9% | 39.0% | 46.6% | 68.8% | 67.7% |
+|               | SIRL-Qwen2.5-32B-Gurobi(pass@8) | 98.0% | 90.5% | 69.2% | 45.0% | 61.7% | 68.6% | 72.2% |
+| COPT-7B            | SIRL-Qwen2.5-7B-COPT| 95.1% | 89.3% | **68.2%** | 31.0% | **33.7%** | 58.3% | **62.6%** |
 |                | SIRL-Qwen2.5-7B-COPT(pass@8) | 97.8% | 90.5% | 75.4% | 35.0% | 45.1% | 61.8% | 67.6% |
 
 *Note:* Values marked with "*" are from original or reproduced papers with the criterion: relative error < 10⁻⁶. 
 
-The code to reproduce the results of Gurobi version can be found in our [Jupyter Notebook for Gurobi](https://github.com/Cardinal-Operations/SIRL/blob/main/reproduce_gurobi.ipynb).
-The code to reproduce the results of COPT version can be found in our [Jupyter Notebook for COPT](https://github.com/Cardinal-Operations/SIRL/blob/main/reproduce_copt.ipynb).
+* The code to reproduce the results of Gurobi version can be found in our [Jupyter Notebook for Gurobi](https://github.com/Cardinal-Operations/SIRL/blob/main/reproduce_gurobi.ipynb).
+* The code to reproduce the results of COPT version can be found in our [Jupyter Notebook for COPT](https://github.com/Cardinal-Operations/SIRL/blob/main/reproduce_copt.ipynb).
 
 ## Inference
 
