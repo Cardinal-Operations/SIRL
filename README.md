@@ -73,7 +73,6 @@ The performance metrics for [SIRL](https://huggingface.co/chenyitian-shanshu/SIR
 | Gurobi-7B     | SIRL-Qwen2.5-7B-Gurobi   | **96.3%**  | **90.0%**  | 62.1%     | **33.0%**   | 29.0%  | 58.0% | 61.4%     |
 |               | SIRL-Qwen2.5-7B-Gurobi(pass@8) | 97.1% | 90.2% | 63.5% | 38.0% | 33.2% | 62.5% | 64.1% |
 |  Gruobi-32B             | SIRL-Qwen2.5-32B-Gurobi(pass@1) | 97.1% | 88.8% | 65.9% | 39.0% | 46.6% | 68.8% | 67.7% |
-|               | SIRL-Qwen2.5-32B-Gurobi(pass@8) | 98.0% | 90.5% | 69.2% | 45.0% | 61.7% | 68.6% | 72.2% |
 | COPT-7B            | SIRL-Qwen2.5-7B-COPT| 95.1% | 89.3% | **68.2%** | 31.0% | **33.7%** | 58.3% | **62.6%** |
 |                | SIRL-Qwen2.5-7B-COPT(pass@8) | 97.8% | 90.5% | 75.4% | 35.0% | 45.1% | 61.8% | 67.6% |
 
