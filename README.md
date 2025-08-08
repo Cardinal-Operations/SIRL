@@ -37,6 +37,8 @@ To explore its full functionalities or to request a trial, please visit the offi
 
 ## Updates
 
+- **2025.08.09** - We've released an update to the **Mamo_complex dataset**. Following a community discussion about potential inaccuracies in the **Traveling Salesman Problem (TSP)** instances, we conducted a thorough audit and corrected the ground-truth values.
+We also updated the evaluation results for our new models and several other models, including DeepSeek-V3, DeepSeek-R1, and OpenAI-O3, based on this corrected benchmark.
 - **2025.07.28** - [SIRL-Qwen2.5-7B-COPT](https://huggingface.co/chenyitian-shanshu/SIRL/tree/main/Copt) ,which leverages the COPT optimization solver, is publicly available on Hugging Face and ModelScope.
 - **2025.05.20** - [SIRL-Qwen2.5-7B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL/tree/main) ,which leverages the Gurobi optimization solver, is publicly available on Hugging Face and ModelScope.
 - **2025.05.17** - SIRL paper published on arXiv: [Solver-Informed Reinforcement Learning for Optimization Modeling](https://arxiv.org/abs/2505.11792).
@@ -58,23 +60,25 @@ We evaluated the performance of the proposed SIRL framework on four benchmarks: 
 Performance is assessed based on the pass@1 accuracy(acc). Following the rigorous evaluation protocol proposed by OptMATH, a solution is considered valid if the relative error is less than 1e-6.
 The performance metrics for [SIRL](https://huggingface.co/chenyitian-shanshu/SIRL) are as follows. The highest results are highlighted in bold.
 
-| Types         | Models            | NL4OPT | MAMO Easy | MAMO Complex | IndustryOR | OptMATH | OptiBench | Macro AVG |
+
+| Types         | Models            | NL4OPT | MAMO Easy | MAMO Complex revised | IndustryOR | OptMATH | OptiBench | Macro AVG |
 |---------------|-------------------|--------|-----------|--------------|------------|---------|-----------|-----------|
 | Baseline      | GPT-3.5-turbo     | 78.0%* | 79.3%*    | 33.2%*       | 21.0%*     | 15.0%*  | 47.4%*   | 51.4%*    |
 |               | GPT-4             | 89.0%* | 87.3%*    | 49.3%*       | 33.3%*     | 16.6%*  | 68.6%* | 57.4%*    |
-|               | Deepseek-V3       | 95.9%* | 88.3%*    | 51.1%*       | 37.0%* | 32.6%*  | **71.6%*** | 62.8%*    |
-|               | DeepSeek-R1       | 82.4%  | 77.8%     | 49.3%        | **45.0%**  | 50.3% | 66.4% | 61.9% |
-|               | OpenAI-O3            | 69.4%  | 70.1%     | 38.8%        | 44.0%      | 39.9% | - | 52.4% |
+|               | Deepseek-V3       | 95.9%* | 88.3%*    | 50.2%       | 37.0%* | 32.6%*  | **71.6%*** | 62.6%*    |
+|               | DeepSeek-R1       | 82.4%  | 77.8%     | 68.7%        | **45.0%**  | 50.3% | 66.4% | 61.9% |
+|               | OpenAI-O3            | 69.4%  | 70.1%     | 53.5%        | 44.0%      | 39.9% | 58.6% | 55.9% |
 | Agent-based   | Chain-of-Experts  | 64.2%* | -    | -       | -     | -  | - |    -    |
 |               | OptiMUS           | 78.8%* | 77.0%*    | 43.6%*       | 31.0%*     | 20.2%*   | 45.8%* | 49.4%*    |
 | Offline-learning | ORLM-LLaMA-3-8B | 85.7%* | 82.3%*    | 37.4%*       | 24.0%*     | 2.6%*   | 51.1%* | 47.2%*    |
 |               | LLMOpt-Qwen2.5-14B | 80.3%* | 89.5%*    | 44.1%*       | 29.0%*     | 12.5%*  | 53.8%* | 51.1%*    |
-|               | OptMATH-Qwen2.5-7B | 94.7%* | 86.5%*    | 51.2%*       | 20.0%*     | 24.4%*  | 57.9%* | 55.8%*    |
-| Gurobi-7B     | SIRL-Qwen2.5-7B-Gurobi   | **96.3%**  | **90.0%**  | 62.1%     | **33.0%**   | 29.0%  | 58.0% | 61.4%     |
-|               | SIRL-Qwen2.5-7B-Gurobi(pass@8) | 97.1% | 90.2% | 63.5% | 38.0% | 33.2% | 62.5% | 64.1% |
-|  Gruobi-32B             | SIRL-Qwen2.5-32B-Gurobi(pass@1) | 97.1% | 88.8% | 65.9% | 39.0% | 46.6% | 68.8% | 67.7% |
-| COPT-7B            | SIRL-Qwen2.5-7B-COPT| 95.1% | 89.3% | **68.2%** | 31.0% | **33.7%** | 58.3% | **62.6%** |
-|                | SIRL-Qwen2.5-7B-COPT(pass@8) | 97.8% | 90.5% | 75.4% | 35.0% | 45.1% | 61.8% | 67.6% |
+|               | OptMATH-Qwen2.5-7B | 94.7%* | 86.5%*    | -      | 20.0%*     | 24.4%*  | 57.9%* | 55.8%*    |
+| Gurobi-7B     | SIRL-Qwen2.5-7B-Gurobi   | **96.3%**  | **90.0%**  | 51.7%     | **33.0%**   | 33.7%  | 58.0% | 59.7%     |
+|               | SIRL-Qwen2.5-7B-Gurobi(pass@8) | 97.1% | 92.2% | 58.3% | 40.0% | 46.6% | 69.4% | 67.3% |
+|  Gruobi-32B             | SIRL-Qwen2.5-32B-Gurobi(pass@1) | 97.1% | 88.8% | 57.8% | 39.0% | 46.6% | 68.8% | 67.7% |
+| COPT-7B            | SIRL-Qwen2.5-7B-COPT| 95.1% | 89.3% | **53.1%** | 31.0% | **33.7%** | 58.3% | **60.1%** |
+|                | SIRL-Qwen2.5-7B-COPT(pass@8) | 97.8% | 90.5% | 58.8% | 35.0% | 45.1% | 61.8% | 64.8% |
+
 
 *Note:* Values marked with "*" are from original or reproduced papers with the criterion: relative error < 10⁻⁶. 
 
