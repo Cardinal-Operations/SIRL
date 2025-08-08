@@ -22,7 +22,8 @@
 
 
 ## Overview & Examples
-We introduce **SIRL (Solver-Informed Reinforcement Learning)**, a novel reasoning paradigm that integrates solver feedback with reinforcement learning to train large language models (LLMs) for optimization modeling. This approach represents the first application of Reinforcement Learning with Verifiable Reward (RLVR) in the domain of optimization modeling, enabling LLMs to generate accurate mathematical formulations and code generations from natural language descriptions. SIRL leverages solver outputs to iteratively refine model performance, achieving state-of-the-art results on complex optimization tasks. The framework is particularly effective for industrial and operational research problems, where precise mathematical modeling is critical.
+We introduce **SIRL (Solver-Informed Reinforcement Learning)**, a novel reasoning paradigm that integrates solver feedback with reinforcement learning to train large language models (LLMs) for optimization modeling. This approach represents the first application of Reinforcement Learning with Verifiable Reward (RLVR) in the domain of optimization modeling, enabling LLMs to generate accurate mathematical formulations and code generations from natural language descriptions. SIRL leverages solver outputs to iteratively refine model performance. 
+Our SIRL-Qwen2.5-32B model surpasses the performance of DeepSeek-V3 and OpenAI-O3 on optimization modeling benchmarks,demonstrating the effectiveness of our approach.
 
 Currently, we offer LLM model checkpoints that seamlessly integrate with both Gurobi and COPT optimization solver.
 COPT (Cardinal Optimizer) is a mathematical optimization solver for large-scale optimization problems developed by Cardinal Operations, and it includes high-performance solvers for LP, MIP, NLP and so on.
