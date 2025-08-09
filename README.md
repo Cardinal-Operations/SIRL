@@ -67,7 +67,7 @@ The performance metrics for [SIRL](https://huggingface.co/chenyitian-shanshu/SIR
 | Baseline      | GPT-3.5-turbo     | 78.0%* | 79.3%*    | 33.2%*       | 21.0%*     | 15.0%*  | 47.4%*   | 51.4%*    |
 |               | GPT-4             | 89.0%* | 87.3%*    | 49.3%*       | 33.3%*     | 16.6%*  | 68.6%* | 57.4%*    |
 |               | Deepseek-V3       | 95.9%* | 88.3%*    | 50.2%       | 37.0%* | 32.6%*  | **71.6%*** | 62.6%*    |
-|               | DeepSeek-R1       | 82.4%  | 77.8%     | 68.7%        | **45.0%**  | 50.3% | 66.4% | 61.9% |
+|               | DeepSeek-R1       | 82.4%  | 77.8%     | **68.7%**        | **45.0%**  | **50.3%** | 66.4% | 61.9% |
 |               | OpenAI-O3            | 69.4%  | 70.1%     | 53.5%        | 44.0%      | 39.9% | 58.6% | 55.9% |
 | Agent-based   | Chain-of-Experts  | 64.2%* | -    | -       | -     | -  | - |    -    |
 |               | OptiMUS           | 78.8%* | 77.0%*    | 43.6%*       | 31.0%*     | 20.2%*   | 45.8%* | 49.4%*    |
@@ -76,11 +76,10 @@ The performance metrics for [SIRL](https://huggingface.co/chenyitian-shanshu/SIR
 |               | OptMATH-Qwen2.5-7B | 94.7%* | 86.5%*    | 40.8%     | 20.0%*     | 24.4%*  | 57.9%* | 55.8%*    |
 |               | OptMATH-Qwen2.5-32B | 95.9%|	89.9%|	54.1%|	31.0%	|34.7%	 |66.1%	|62.0%  |
 | Gurobi-7B     | SIRL-Qwen2.5-7B-Gurobi   | 96.3%* | 90.0%  | 51.7%     | 33.0%   | 33.7%  | 58.0% | 59.7%     |
-|               | SIRL-Qwen2.5-7B-Gurobi(pass@8) | 97.1% | 92.2% | 58.3% | 40.0% | 46.6% | 69.4% | 67.3% |
-|  Gruobi-32B             | SIRL-Qwen2.5-32B-Gurobi(pass@1) | 97.1% | 88.8% | 57.8% | 39.0% | 46.6% | 68.8% | 67.7% |
+|  Gruobi-32B             | SIRL-Qwen2.5-32B-Gurobi | 97.1% | 88.8% | 57.8% | 39.0% | 46.6% | 68.8% | 67.7% |
 | COPT-7B            | SIRL-Qwen2.5-7B-COPT| 95.1% | 89.3% | **53.1%** | 31.0% | **33.7%** | 58.3% | **60.1%** |
-|                | SIRL-Qwen2.5-7B-COPT(pass@8) | 97.8% | 90.5% | 58.8% | 35.0% | 45.1% | 61.8% | 64.8% |
-
+|       pass@8           | SIRL-Qwen2.5-7B-Gurobi | 97.1% | 92.2% | 58.3% | 40.0% | 46.6% | 69.4% | 67.3% |
+|    pass@8            | SIRL-Qwen2.5-7B-COPT | 97.8% | 90.5% | 58.8% | 35.0% | 45.1% | 61.8% | 64.8% |
 
 *Note:* Values marked with "*" are from original or reproduced papers with the criterion: relative error < 10⁻⁶. 
 
