@@ -47,7 +47,7 @@ We also updated the evaluation results for our new models and several other mode
 ## Model Release
 
 The checkpoints of [SIRL-Qwen2.5-7B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL) and [SIRL-Qwen2.5-7B-COPT](https://huggingface.co/chenyitian-shanshu/SIRL/tree/main/Copt) are avaiable on Hugging Face and Model Scope. 
-We will soon be introducing new models, including a 32B-level model that has been shown to outperform DeepSeek-V3 and achieve performance on par with powerful LRMs like DeepSeek-R1 and OpenAI-O3.
+We will soon be introducing new models, including a 32B-level model that has been shown to outperform DeepSeek-V3 and OpenAI-O3.
 
 
 | Solver Type          | Hugging Face      | ModelScope |
