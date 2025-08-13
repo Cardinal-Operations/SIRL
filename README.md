@@ -62,7 +62,7 @@ Performance is assessed based on the pass@1 accuracy(acc). Following the rigorou
 The performance metrics for [SIRL](https://huggingface.co/chenyitian-shanshu/SIRL) are as follows. The highest results are highlighted in bold.
 
 
-| Types         | Models            | NL4OPT | MAMO Easy | MAMO Complex revised | IndustryOR | OptMATH | OptiBench | Macro AVG |
+| Types         | Models            | NL4OPT | MAMO Easy | MAMO Complex revised | IndustryOR | OptMATH_166 / OptMath_193 | OptiBench | Macro AVG |
 |---------------|-------------------|--------|-----------|--------------|------------|---------|-----------|-----------|
 | Baseline      | GPT-3.5-turbo     | 78.0%* | 79.3%*    | 33.2%*       | 21.0%*     | 15.0%*  | 47.4%*   | 51.4%*    |
 |               | GPT-4             | 89.0%* | 87.3%*    | 49.3%*       | 33.3%*     | 16.6%*  | 68.6%* | 57.4%*    |
@@ -75,9 +75,9 @@ The performance metrics for [SIRL](https://huggingface.co/chenyitian-shanshu/SIR
 |               | LLMOpt-Qwen2.5-14B | 80.3%* | 89.5%*    | 44.1%*       | 29.0%*     | 12.5%*  | 53.8%* | 51.1%*    |
 |               | OptMATH-Qwen2.5-7B | 94.7%* | 86.5%*    | 40.8%     | 20.0%*     | 24.4%*  | 57.9%* | 55.8%*    |
 |               | OptMATH-Qwen2.5-32B | 95.9%|	89.9%|	54.1%|	31.0%	|34.7%	 |66.1%	|62.0%  |
-| Gurobi-7B     | SIRL-Qwen2.5-7B-Gurobi   | 96.3%* | 90.0%  | 51.7%     | 33.0%   | 33.7%  | 58.0% | 59.7%     |
-|  Gruobi-32B             | SIRL-Qwen2.5-32B-Gurobi | 97.1% | 88.8% | 57.8% | 39.0% | 46.6% | 68.8% | 67.7% |
-| COPT-7B            | SIRL-Qwen2.5-7B-COPT| 95.1% | 89.3% | **53.1%** | 31.0% | **33.7%** | 58.3% | **60.1%** |
+| Gurobi-7B     | SIRL-Qwen2.5-7B-Gurobi   | 96.3%* | 90.0%  | 51.7%     | 33.0%   | 30.5%/33.7%  | 58.0% | 59.7%     |
+|  Gruobi-32B             | SIRL-Qwen2.5-32B-Gurobi | 97.1% | 88.8% | 57.8% | 39.0% | 45.8%/46.6% | 68.8% | 67.7% |
+| COPT-7B            | SIRL-Qwen2.5-7B-COPT| 95.1% | 89.3% | **53.1%** | 31.0% | 29.5%/33.7% | 58.3% | **60.1%** |
 |       pass@8           | SIRL-Qwen2.5-7B-Gurobi | 97.1% | 92.2% | 58.3% | 40.0% | 46.6% | 69.4% | 67.3% |
 |    pass@8            | SIRL-Qwen2.5-7B-COPT | 97.8% | 90.5% | 58.8% | 35.0% | 45.1% | 61.8% | 64.8% |
 
