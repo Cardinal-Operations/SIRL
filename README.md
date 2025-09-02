@@ -37,7 +37,7 @@ To explore its full functionalities or to request a trial, please visit the offi
 
 
 ## Updates
- - **2025.09.02** - We performed a quick  correction on the NL4OPT, IndustryOR, MAMO-ComplexLP, and MAMO-EasyLP dataset.We ncourage other researchers to use these revised versions for their future work on LLMs for optimization modeling. A detailed description of the correction process can be found here [Benchmark Data Descriptions](https://github.com/Cardinal-Operations/SIRL/tree/main/test_data/)
+ - **2025.09.02** - We performed a quick  correction on the NL4OPT, IndustryOR, MAMO-ComplexLP, and MAMO-EasyLP dataset.We ncourage other researchers to use these revised versions for their future work on LLMs for optimization modeling. A detailed description of the correction process can be found here [Benchmark Data Descriptions](https://github.com/Cardinal-Operations/SIRL/tree/main/test_data/).Users can also access the cleaned dataset on the Hugging Face Hub at: https://huggingface.co/datasets/chenyitian-shanshu/ORLMBenchmark.
 - **2025.08.08** - We've released an update to the **Mamo_complex dataset**. Following a community discussion about potential inaccuracies in the **Traveling Salesman Problem (TSP)** instances, we conducted a thorough audit and corrected the ground-truth values. 
 We also updated the evaluation results for our new models and several other models, including DeepSeek-V3, DeepSeek-R1, and OpenAI-O3, based on this corrected benchmark.
 - **2025.07.28** - [SIRL-Qwen2.5-7B-COPT](https://huggingface.co/chenyitian-shanshu/SIRL/tree/main/Copt) ,which leverages the COPT optimization solver, is publicly available on Hugging Face and ModelScope.
