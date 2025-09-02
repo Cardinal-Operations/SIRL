@@ -2,7 +2,7 @@
 
 Our test data is primarily inherited from the OptMath project. 
 You can find the original repository and a full description of the dataset at the following link: [OptMath-Github Repository](https://github.com/optsuite/OptMATH).
- We performed a quick review and correction on the NL4OPT, IndustryOR, MAMO-ComplexLP, and MAMO-EasyLP datasetsets. 
+ We performed a quick review and correction on the NL4OPT, IndustryOR, MAMO-ComplexLP, and MAMO-EasyLP dataset. 
  Table 1 summarizes the sample counts for each dataset before and after our revisions.  
 |Dataset|	Number Before Correction	| Number After Correction |
 | ----- | ---------------- | -------------- |
