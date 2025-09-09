@@ -76,7 +76,7 @@ The performance metrics for [SIRL](https://huggingface.co/chenyitian-shanshu/SIR
 |               | OptMATH-Qwen2.5-7B | 94.7%* | 86.5%*    | 40.8%     | 20.0%*     | 24.4%*  | 57.9%* | 55.8%*    |
 |               | OptMATH-Qwen2.5-32B | 95.9%|	89.9%|	54.1%|	31.0%	|34.7%	 |66.1%	|62.0%  |
 | Gurobi-7B     | SIRL-Qwen2.5-7B-Gurobi   | 96.3%* | 91.7%  | 51.7%     | 33.0%   | 30.5%  | 58.0% | 60.2%     |
-|  Gruobi-32B             | SIRL-Qwen2.5-32B-Gurobi | **98.0%**	| **94.6%**|	61.1%	|42.0%	|**45.8%**	|67.4%	|68.2% |
+|  Gruobi-32B             | SIRL-Qwen2.5-32B-Gurobi | **98.0%**	| **94.6%**|	61.1%	|42.0%	|**45.8%**	|67.4%	|**68.2%** |
 | COPT-7B            | SIRL-Qwen2.5-7B-COPT| 95.1% | 92.1% | 53.1% | 31.0% | 29.5% | 58.3% | 58.9%|
 
 *Note:* Values marked with "*" are from original or reproduced papers with the criterion: relative error < 10⁻⁶. 
