@@ -37,23 +37,23 @@ To explore its full functionalities or to request a trial, please visit the offi
 
 
 ## Updates
- - **2025.09.02** - We performed a quick  correction on the NL4OPT, IndustryOR, MAMO-ComplexLP, and MAMO-EasyLP dataset.We encourage other researchers to use these revised versions for their future work on LLMs for optimization modeling. A detailed description of the correction process can be found here [Benchmark Data Descriptions](https://github.com/Cardinal-Operations/SIRL/tree/main/test_data/).Users can also access the cleaned dataset on the Hugging Face Hub at: https://huggingface.co/datasets/chenyitian-shanshu/ORLMBenchmark.
-- **2025.08.08** - We've released an update to the **Mamo_complex dataset**. Following a community discussion about potential inaccuracies in the **Traveling Salesman Problem (TSP)** instances, we conducted a thorough audit and corrected the ground-truth values. 
-We also updated the evaluation results for our new models and several other models, including DeepSeek-V3, DeepSeek-R1, and OpenAI-O3, based on this corrected benchmark.
+ - **2025.09.09** - [SIRL-Qwen2.5-32B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL-Gurobi32B), which leverages the Gurobi optimization solver, is publicly available on Hugging Face and ModelScope. This model integrates the Gurobi solver and achieves state-of-the-art performance, surpassing OpenAI-o3 and Deepseek-v3, and is comparable to Deepseek-R1 across various LLMs for optimization modeling benchmarks.
+ - **2025.09.02** - We performed a quick correction on the NL4OPT, IndustryOR, MAMO-ComplexLP, and MAMO-EasyLP dataset. We encourage other researchers to use these revised versions for their future work on LLMs for optimization modeling. A detailed description of the correction process can be found here [Benchmark Data Descriptions](https://github.com/Cardinal-Operations/SIRL/tree/main/test_data/).Users can also access the cleaned dataset on the Hugging Face Hub at: https://huggingface.co/datasets/chenyitian-shanshu/ORLMBenchmark.
 - **2025.07.28** - [SIRL-Qwen2.5-7B-COPT](https://huggingface.co/chenyitian-shanshu/SIRL/tree/main/Copt) ,which leverages the COPT optimization solver, is publicly available on Hugging Face and ModelScope.
 - **2025.05.20** - [SIRL-Qwen2.5-7B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL/tree/main) ,which leverages the Gurobi optimization solver, is publicly available on Hugging Face and ModelScope.
 - **2025.05.17** - SIRL paper published on arXiv: [Solver-Informed Reinforcement Learning for Optimization Modeling](https://arxiv.org/abs/2505.11792).
 
 ## Model Release
 
-The checkpoints of [SIRL-Qwen2.5-7B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL) and [SIRL-Qwen2.5-7B-COPT](https://huggingface.co/chenyitian-shanshu/SIRL/tree/main/Copt) are avaiable on Hugging Face and Model Scope. 
-We will soon be introducing new models, including a 32B-level model that has been shown to outperform DeepSeek-V3 and OpenAI-O3.
+The checkpoints of [SIRL-Qwen2.5-7B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL), [SIRL-Qwen2.5-7B-COPT](https://huggingface.co/chenyitian-shanshu/SIRL/tree/main/Copt) and [SIRL-Qwen2.5-32B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL-Gurobi32B) are avaiable on Hugging Face and Model Scope. 
+ We are developing our next-generation LLM models to tackle a broader range of general optimization and mathematical tasks.
 
 
 | Solver Type          | Hugging Face      | ModelScope |
 |---------------------|---------------- | ---|
-| Gurobi     | [SIRL-Qwen2.5-7B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL-Gurobi)   | [SIRL-Qwen2.5-7B-Gurobi](https://modelscope.cn/models/oneday88/SIRL-7B) |
-| COPT | [SIRL-Qwen2.5-7B-COPT](https://huggingface.co/chenyitian-shanshu/SIRL-COPT) | [SIRL-Qwen2.5-7B-COPT](https://modelscope.cn/models/oneday88/sirl-qwen2-5-7b-copt) |
+| Gurobi-7B     | [SIRL-Qwen2.5-7B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL-Gurobi)   | [SIRL-Qwen2.5-7B-Gurobi](https://modelscope.cn/models/oneday88/SIRL-7B) |
+| Gurobi-32B     | [SIRL-Qwen2.5-32B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL-Gurobi32B)   | [SIRL-Qwen2.5-32B-Gurobi](https://modelscope.cn/models/oneday88/sirl-qwen2-5-32b-gurobi) |
+| COPT-7B | [SIRL-Qwen2.5-7B-COPT](https://huggingface.co/chenyitian-shanshu/SIRL-COPT) | [SIRL-Qwen2.5-7B-COPT](https://modelscope.cn/models/oneday88/sirl-qwen2-5-7b-copt) |
 
 ## Performance
 
@@ -62,22 +62,22 @@ Performance is assessed based on the pass@1 accuracy(acc). Following the rigorou
 The performance metrics for [SIRL](https://huggingface.co/chenyitian-shanshu/SIRL) are as follows. The highest results are highlighted in bold.
 
 
-| Types         | Models            | NL4OPT | MAMO Easy | MAMO Complex revised | IndustryOR | OptMATH_166 / OptMath_193 | OptiBench | Macro AVG |
+| Types         | Models            | NL4OPT | MAMO Easy | MAMO Complex revised | IndustryOR | OptMATH_166  | OptiBench | Macro AVG |
 |---------------|-------------------|--------|-----------|--------------|------------|---------|-----------|-----------|
 | Baseline      | GPT-3.5-turbo     | 78.0%* | 79.3%*    | 33.2%*       | 21.0%*     | 15.0%*  | 47.4%*   | 51.4%*    |
 |               | GPT-4             | 89.0%* | 87.3%*    | 49.3%*       | 33.3%*     | 16.6%*  | 68.6%* | 57.4%*    |
-|               | Deepseek-V3       | 95.9%* | 88.3%*    | 50.2%       | 37.0%* | 44.0%/42.0%  | **71.6%*** | 62.6%*    |
-|               | DeepSeek-R1       | 82.4%  | 77.8%     | **68.7%**        | **45.0%**  | 40.4%/50.3% | 66.4% | 61.9% |
-|               | OpenAI-O3            | 69.4%  | 70.1%     | 53.5%        | 44.0%      | 44.0%/39.9% | 58.6% | 55.9% |
+|               | Deepseek-V3       | 95.9%* | 88.3%*    | 50.2%       | 37.0%* | 44.0%  | **71.6%*** | 64.5%*    |
+|               | DeepSeek-R1       | 82.4%  | 87.2%     | **67.9%**        | **45.0%**  | 40.4% | 66.4% | 61.9% |
+|               | OpenAI-O3            | 69.4%  | 77.1%     | 51.2%        | 44.0%      | 44.0% | 58.6% |  57.38% |
 | Agent-based   | Chain-of-Experts  | 64.2%* | -    | -       | -     | -  | - |    -    |
 |               | OptiMUS           | 78.8%* | 77.0%*    | 43.6%*       | 31.0%*     | 20.2%*   | 45.8%* | 49.4%*    |
 | Offline-learning | ORLM-LLaMA-3-8B | 85.7%* | 82.3%*    | 37.4%*       | 24.0%*     | 2.6%*   | 51.1%* | 47.2%*    |
 |               | LLMOpt-Qwen2.5-14B | 80.3%* | 89.5%*    | 44.1%*       | 29.0%*     | 12.5%*  | 53.8%* | 51.1%*    |
 |               | OptMATH-Qwen2.5-7B | 94.7%* | 86.5%*    | 40.8%     | 20.0%*     | 24.4%*  | 57.9%* | 55.8%*    |
 |               | OptMATH-Qwen2.5-32B | 95.9%|	89.9%|	54.1%|	31.0%	|34.7%	 |66.1%	|62.0%  |
-| Gurobi-7B     | SIRL-Qwen2.5-7B-Gurobi   | 96.3%* | 91.7%  | 51.7%     | 33.0%   | 30.5%/33.7%  | 58.0% | 59.7%     |
-|  Gruobi-32B             | SIRL-Qwen2.5-32B-Gurobi | 97.1% | 93.8% | 57.6% | 39.0% | 45.8%/46.6% | 68.8% | 67.7% |
-| COPT-7B            | SIRL-Qwen2.5-7B-COPT| 95.1% | 92.1% | 53.1% | 31.0% | 29.5%/33.7% | 58.3% | **60.1%** |
+| Gurobi-7B     | SIRL-Qwen2.5-7B-Gurobi   | 96.3%* | 91.7%  | 51.7%     | 33.0%   | 30.5%  | 58.0% | 60.2%     |
+|  Gruobi-32B             | SIRL-Qwen2.5-32B-Gurobi | **98.0%**	| **94.6%**|	61.1%	|42.0%	|**45.8%**	|67.4%	|68.2% |
+| COPT-7B            | SIRL-Qwen2.5-7B-COPT| 95.1% | 92.1% | 53.1% | 31.0% | 29.5% | 58.3% | 58.9%|
 
 *Note:* Values marked with "*" are from original or reproduced papers with the criterion: relative error < 10⁻⁶. 
 
