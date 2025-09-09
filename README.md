@@ -62,7 +62,7 @@ Performance is assessed based on the pass@1 accuracy(acc). Following the rigorou
 The performance metrics for [SIRL](https://huggingface.co/chenyitian-shanshu/SIRL) are as follows. The highest results are highlighted in bold.
 
 
-| Types         | Models            | NL4OPT | MAMO Easy | MAMO Complex revised | IndustryOR | OptMATH_166  | OptiBench | Macro AVG |
+| Types         | Models            | NL4OPT | MAMO Easy fixed | MAMO Complex fixed | IndustryOR | OptMATH_166  | OptiBench | Macro AVG |
 |---------------|-------------------|--------|-----------|--------------|------------|---------|-----------|-----------|
 | Baseline      | GPT-3.5-turbo     | 78.0%* | 79.3%*    | 33.2%*       | 21.0%*     | 15.0%*  | 47.4%*   | 51.4%*    |
 |               | GPT-4             | 89.0%* | 87.3%*    | 49.3%*       | 33.3%*     | 16.6%*  | 68.6%* | 57.4%*    |
