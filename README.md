@@ -46,7 +46,7 @@ To explore its full functionalities or to request a trial, please visit the offi
 ## Model Release
 
 The checkpoints of [SIRL-Qwen2.5-7B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL), [SIRL-Qwen2.5-7B-COPT](https://huggingface.co/chenyitian-shanshu/SIRL/tree/main/Copt) and [SIRL-Qwen2.5-32B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL-Gurobi32B) are avaiable on Hugging Face and Model Scope. 
- We are developing our next-generation LLM models to tackle a broader range of general optimization and mathematical tasks.
+ Looking ahead, we aim to develop our next-generation LLM models to tackle a broader range of general optimization and mathematical tasks.
 
 
 | Solver Type          | Hugging Face      | ModelScope |
