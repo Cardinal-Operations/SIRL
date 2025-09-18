@@ -37,6 +37,7 @@ To explore its full functionalities or to request a trial, please visit the offi
 
 
 ## Updates
+ - **2025.09.19** - Our paper has been accepted as a poster presentation at NeurIPS 2025! 🔥
  - **2025.09.09** - [SIRL-Qwen2.5-32B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL-Gurobi32B), which leverages the Gurobi optimization solver, is publicly available on Hugging Face and ModelScope. This model integrates the Gurobi solver and achieves state-of-the-art performance, surpassing OpenAI-o3 and Deepseek-v3, and is comparable to Deepseek-R1 across various optimization benchmarks.
  - **2025.09.02** - We performed a quick correction on the NL4OPT, IndustryOR, MAMO-ComplexLP, and MAMO-EasyLP dataset. We encourage other researchers to use these revised versions for their future work on LLMs for optimization modeling. A detailed description of the correction process can be found here [Benchmark Data Descriptions](https://github.com/Cardinal-Operations/SIRL/tree/main/test_data/). Users can also access the cleaned dataset on the Hugging Face Hub at: https://huggingface.co/datasets/chenyitian-shanshu/ORLMBenchmark.
 - **2025.07.28** - [SIRL-Qwen2.5-7B-COPT](https://huggingface.co/chenyitian-shanshu/SIRL/tree/main/Copt) ,which leverages the COPT optimization solver, is publicly available on Hugging Face and ModelScope.
