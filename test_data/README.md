@@ -1,7 +1,6 @@
 # Benchmark Data Descriptions
 
-Our test data is primarily inherited from the OptMath project. 
-You can find the original repository and a full description of the dataset at the following link: [OptMath-Github Repository](https://github.com/optsuite/OptMATH).
+A comprehensive benchmark dataset for large language models (LLMs) in optimization modeling, including NL4OPT, IndustryOR, MAMO-EasyLP, MAMO-ComplexLP, OptMATH, Optibench.
  We performed a quick review and correction on the NL4OPT, IndustryOR, MAMO-ComplexLP, and MAMO-EasyLP dataset. 
  Table 1 summarizes the sample counts for each dataset before and after our revisions.  
 |Dataset|	Number Before Correction	| Number After Correction |
