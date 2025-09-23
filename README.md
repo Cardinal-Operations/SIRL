@@ -161,10 +161,19 @@ print('optimal value is', obj)
 ```
 
 ## Test Dataset
-We evaluate the performance of our trained model on multiple datasets
-which include NL4OPT, MAMO, IndustryOR, OptMATH. 
-Minor errors exist within these testing datasets. 
-To address this, we rigorously reviewed and corrected the test sets of these benchmarks, updating the questions and corresponding answers to ensure the integrity of our evaluation, with a specific focus on the NL4OPT and IndustryOR dataset. The datasets are available at [https://github.com/Cardinal-Operations/SIRL/tree/main/test_data](https://github.com/Cardinal-Operations/SIRL/tree/main/test_data). 
+Our model's performance is evaluated using the following benchmark datasets: NL4OPT, IndustryOR, MAMO-EasyLP, MAMO-ComplexLP, OptMATH, and Optibench.
+ We performed a quick review and correction on the NL4OPT, IndustryOR, MAMO-ComplexLP, and MAMO-EasyLP dataset. 
+ Table 1 summarizes the sample counts for each dataset before and after our revisions.  
+|Dataset|	Number Before Correction	| Number After Correction |
+| ----- | ---------------- | -------------- |
+| NL4OPT   | 245           | 245     |
+| MAMO_EasyLP   |    652          |  642      |
+| MAMO_ComplexLP   | 211                | 203             |
+| IndustryOR   | 100               | 100            |
+| OptMATH   | 166            | 166        |
+| Optibench   | 605              | 605            |
+
+The datasets are available at [https://github.com/Cardinal-Operations/SIRL/tree/main/test_data](https://github.com/Cardinal-Operations/SIRL/tree/main/test_data). 
 
 ### Data Structure
 
