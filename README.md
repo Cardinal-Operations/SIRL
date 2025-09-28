@@ -21,7 +21,9 @@
 </p>
 
 ## Updates
+ 
  - **2025.09.19** - [Our paper](https://neurips.cc/virtual/2025/poster/119660) has been accepted for a poster presentation at NeurIPS 2025! 🔥
+ - **2025.09.28** - [SIRL-Qwen2.5-32B-COPT](https://huggingface.co/chenyitian-shanshu/SIRL-COPT32B), which leverages the COPT optimization solver, is publicly available on Hugging Face and ModelScope. This model integrates the COPT solver and achieves  performance comparable to [SIRL-Qwen2.5-32B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL-Gurobi32B) across all optimization benchmarks.
  - **2025.09.09** - [SIRL-Qwen2.5-32B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL-Gurobi32B), which leverages the Gurobi optimization solver, is publicly available on Hugging Face and ModelScope. This model integrates the Gurobi solver and achieves state-of-the-art performance, surpassing OpenAI-o3 and Deepseek-v3, and is comparable to Deepseek-R1 across various optimization benchmarks.
  - **2025.09.02** - We performed a quick correction on the NL4OPT, IndustryOR, MAMO-ComplexLP, and MAMO-EasyLP dataset. We encourage other researchers to use these revised versions for their future work on LLMs for optimization modeling. A detailed description of the correction process can be found here [Benchmark Data Descriptions](https://github.com/Cardinal-Operations/SIRL/tree/main/test_data/). Users can also access the cleaned dataset on the Hugging Face Hub at: https://huggingface.co/datasets/chenyitian-shanshu/ORLMBenchmark.
 - **2025.07.28** - [SIRL-Qwen2.5-7B-COPT](https://huggingface.co/chenyitian-shanshu/SIRL/tree/main/Copt) ,which leverages the COPT optimization solver, is publicly available on Hugging Face and ModelScope.
@@ -55,6 +57,7 @@ The checkpoints of [SIRL-Qwen2.5-7B-Gurobi](https://huggingface.co/chenyitian-sh
 | Gurobi-7B     | [SIRL-Qwen2.5-7B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL-Gurobi)   | [SIRL-Qwen2.5-7B-Gurobi](https://modelscope.cn/models/oneday88/SIRL-7B) |
 | Gurobi-32B     | [SIRL-Qwen2.5-32B-Gurobi](https://huggingface.co/chenyitian-shanshu/SIRL-Gurobi32B)   | [SIRL-Qwen2.5-32B-Gurobi](https://modelscope.cn/models/oneday88/sirl-qwen2-5-32b-gurobi) |
 | COPT-7B | [SIRL-Qwen2.5-7B-COPT](https://huggingface.co/chenyitian-shanshu/SIRL-COPT) | [SIRL-Qwen2.5-7B-COPT](https://modelscope.cn/models/oneday88/sirl-qwen2-5-7b-copt) |
+| COPT-32B     | [SIRL-Qwen2.5-32B-COPT](https://huggingface.co/chenyitian-shanshu/SIRL-COPT32B)   | [SIRL-Qwen2.5-32B-COPT](https://modelscope.cn/models/oneday88/sirl-qwen2-5-32b-copt) |
 
 ## Performance
 
@@ -77,6 +80,7 @@ The performance metrics for [SIRL](https://huggingface.co/chenyitian-shanshu/SIR
 | Gurobi-7B     | SIRL-Qwen2.5-7B-Gurobi   | 96.3%* | 91.7%  | 51.7%     | 33.0%   | 30.5%  | 58.0% | 60.2%     |
 |  Gruobi-32B             | SIRL-Qwen2.5-32B-Gurobi | **98.0%**	| **94.6%**|	61.1%	|42.0%	|**45.8%**	|67.4%	|**68.2%** |
 | COPT-7B            | SIRL-Qwen2.5-7B-COPT| 95.1% | 92.1% | 53.1% | 31.0% | 29.5% | 58.3% | 58.9%|
+|  COPT-32B             | SIRL-Qwen2.5-32B-COPT | **98.4%** | **94.7%** | **72.4%** | 41.0% | 39.8% | 64.1% | **68.4%** |
 
 *Note:* Values marked with "*" are from original or reproduced papers with the criterion: relative error < 10⁻⁶. 
 
