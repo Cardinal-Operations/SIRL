@@ -78,10 +78,10 @@ The performance metrics for [SIRL](https://huggingface.co/chenyitian-shanshu/SIR
 |               | LLMOpt-Qwen2.5-14B | 80.3%* | 89.5%*    | 44.1%*       | 29.0%*     | 12.5%*  | 53.8%* | 51.1%*    |
 |               | OptMATH-Qwen2.5-7B | 94.7%* | 86.5%*    | 40.8%     | 20.0%*     | 24.4%*  | 57.9%* | 55.8%*    |
 |               | OptMATH-Qwen2.5-32B | 95.9%|	89.9%|	54.1%|	31.0%	|34.7%	 |66.1%	|62.0%  |
-| Gurobi-7B     | SIRL-Qwen2.5-7B-Gurobi   | 96.3%* | 91.7%  | 51.7%     | 33.0%   | 30.5%  | 58.0% | 60.2%     |
-|  Gruobi-32B             | SIRL-Qwen2.5-32B-Gurobi | 98.0%	| 94.6%|	61.1%	|42.0%	|**45.8%**	|67.4%	|68.2% |
-| COPT-7B            | SIRL-Qwen2.5-7B-COPT| 95.1% | 92.1% | 53.1% | 31.0% | 29.5% | 58.3% | 58.9%|
-|  COPT-32B             | SIRL-Qwen2.5-32B-COPT | **98.4%** | **94.7%** | **72.4%** | 41.0% | 39.8% | 64.1% | **68.4%** |
+| Gurobi-7B     | SIRL-Qwen2.5-7B-Gurobi   | 96.3%* | 91.7%  | 51.7%     | 38.0%   | 30.5%  | 58.0% | 61.0%     |
+|  Gruobi-32B             | SIRL-Qwen2.5-32B-Gurobi | 98.0%	| 94.6%|	61.1%	|48.0%	|**45.8%**	|67.4%	|69.2% |
+| COPT-7B            | SIRL-Qwen2.5-7B-COPT| 95.1% | 92.1% | 53.1% | 35.0% | 29.5% | 58.3% | 59.6%|
+|  COPT-32B             | SIRL-Qwen2.5-32B-COPT | **98.4%** | **94.7%** | **72.4%** | 46.0% | 39.8% | 64.1% | **69.2%** |
 
 *Note:* Values marked with "*" are from original or reproduced papers with the criterion: relative error < 10⁻⁶. 
 
