@@ -4,13 +4,13 @@ This folder contains the RL training scripts for the paper: **[Solver-Informed R
 
 This part provides all the essential resources for reproducibility and custom training.
 SIRL excels even when integrated with solvers that have limited prior knowledge in pre-trained models (e.g., COPT), ensuring you can seamlessly adapt our proven training methodology for your specific optimization goals.
-* **Training Scripts:**  Complete scripts for model training, featuring different configurations: run_withoutKL.sh, run_withKL, and run_partialKL.sh.
+* **Training Scripts:**  Complete scripts for model training, featuring different configurations: run_withoutKL.sh, run_withKL.sh, and run_partialKL.sh.
 * **Partial-KL Implementation:** The core module containing the specific implementation of the innovative $\text{Partial-KL}$ surrogate function.
 * **Reward Function:**  The specific reward function used to guide the solver in our paper.
 * **Example Dataset:** A lightweight, Parquet-formatted dataset ($\approx 3000$ records) for quick testing and framework verification.
 
 ***Additional Information***
-   * Our implementation builds upon the open-source codebase of [VeRL](https://github.com/volcengine/verl)
+   * Our implementation builds upon the open-source codebase of [VeRL](https://github.com/volcengine/verl) .
    * All experiments for the 7B model were conducted on a single compute node equipped with eight 80GB NVIDIA H100 GPUs.
 
 ## ⚙️ Installation
