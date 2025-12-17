@@ -1,0 +1,157 @@
+[
+  {
+    "id":2,
+    "修复原因":"原始叙述不清",
+    "修改结果":"将题目换为{\n \"en_question\": \"A nation plans to build an air force over a two-year horizon, starting with zero jets and zero combat-ready pilots. The annual production of new fighter jets is \\\\(a_t\\\\) for year \\\\(t\\\\), with \\\\(a_1=10\\\\) and \\\\(a_2=15\\\\). Each year, available jets must be allocated to one of two mutually exclusive roles: combat or training.\\n\\nKey conditions are as follows:\\n1. A combat jet requires one combat-ready pilot.\\n2. A training jet produces 5 new pilots who become combat-ready at the start of the *following* year.\\n3. Jets from previous years are considered part of the standing fleet and must be assigned to combat if pilots are available. Only newly produced jets in a given year can be allocated to training.\\n\\nThe objective is to determine the allocation of jets in each year to maximize the total number of combat-ready pilots available at the end of year 2. What is this maximum number?\",\n \"en_answer\": \"125\",\n \"difficulty\": \"Medium\",\n \"id\": 2\n}"
+  },
+  {
+    "id":5,
+    "修复原因":"原始答案有误",
+    "修改结果":"将题目答案由1600改为18.6943"
+  },
+  {
+    "id":11,
+    "修复原因":"原始叙述不清",
+    "修改结果":"将题目换为{\n\"en_question\": \"A company produces two types of small motorcycles. Type A is entirely manufactured in-house, while Type B is assembled from imported parts. The time required per unit for manufacturing, assembly, and inspection is shown in Table 3.2. The weekly available capacity of each process is also listed. Each process has an hourly cost, and the selling price per unit of each product is given.\\n\\nTable 3.2\\n\\n| Type | Manufacturing (hours\/unit) | Assembly (hours\/unit) | Inspection (hours\/unit) | Selling Price (Yuan\/unit) |\\n| :---: | :---: | :---: | :---: | :---: |\\n| Type A | 20 | 5 | 3 | 650 |\\n| Type B | 0 | 7 | 6 | 725 |\\n| Max weekly capacity | 120 | 80 | 40 | - |\\n| Process cost (Yuan\/hour) | 12 | 8 | 10 | - |\\n\\nLet decision variables \\\\(x_1\\\\) and \\\\(x_2\\\\) denote the weekly production quantities of Type A and Type B, respectively. The company's operational requirements are as follows:\\n\\n- \\\\(p_{1}\\\\): The total weekly profit should be at least 3000 yuan.\\n- \\\\(p_{2}\\\\): At least 5 units of Type A must be produced each week.\\n- \\\\(p_{3}\\\\): Idle time of each process should be minimized, with weights proportional to the corresponding hourly cost. Overtime is not allowed.\\n\\nFormulate a linear programming model to maximize weekly profit subject to these constraints.What is the total profit of the company’s production plan that satisfies the goals and targets above?\",\n\"en_answer\": \"4136.0\",\n\"difficulty\": \"Medium\",\n\"id\": 11\n}\n"
+  },
+  {
+    "id":15,
+    "修复原因":"原始答案有误",
+    "修改结果":"将题目答案由36改为168"
+  },
+  {
+    "id":18,
+    "修复原因":"原始叙述不清，原始答案错误",
+    "修改结果":"将题目答案由36改为168"
+  },
+  {
+    "id":21,
+    "修复原因":"原始答案有误",
+    "修改结果":"将题目答案由1000改为15000"
+  },
+  {
+    "id":22,
+    "修复原因":"原始答案有误",
+    "修改结果":"将题目答案由7890改为156483"
+  },
+  {
+    "id":24,
+    "修复原因":"原始叙述不清",
+    "修改结果":"将题目替换为{\n\"en_question\": \"A manufacturing company needs to transport 1800 units of product from the warehouse to three different sales points. The company has four transportation options: truck, van, motorcycle, and electric vehicle. However, due to high energy consumption, the company can use either vans or electric vehicles, but not both. Each trip generates pollution: 100 units for a truck, 50 units for a van, 10 units for a motorcycle, and 0 units for an electric vehicle. The total pollution generated from all trips cannot exceed 2000 units. At least 10 trips must be made using trucks. The transport capacities per trip are 100 units (truck), 80 units (van), 40 units (motorcycle), and 60 units (electric vehicle). The goal is to plan the transportation so that at least 1800 units are delivered while minimizing the total pollution generated. What is the minimum total pollution?\",\n\"en_answer\": \"1000.0\",\n\"difficulty\": \"Easy\",\n\"id\": 24\n}\n"
+  },
+  {
+    "id":29,
+    "修复原因":"原始叙述不清，原始答案错误",
+    "修改结果":"1、将表格4-3中的第三行的“Nanjing City\"修改为”Donghai City\"\n2、在题目叙述的最后增加一行and answer the question: At least how many people can't meet P3 under this priority?\n3、将题目答案由11500.0改为2000"
+  },
+  {
+    "id":37,
+    "修复原因":"原始叙述不清",
+    "修改结果":"将最后一句话由Try to establish the mathematical programming model for this problem.改为In oder to maximize total profit, try to establish the mathematical programming model for this problem."
+  },
+  {
+    "id":41,
+    "修复原因":"原始叙述不清",
+    "修改结果":"将题目替换为{\n  \"en_question\": \"You have an initial capital of 500,000 yuan at the beginning of Year 1. Over the next three years, you may allocate funds to the following investment projects. The goal is to choose an investment plan that maximizes the **total principal plus interest at the end of Year 3** (no borrowing allowed, and you may reallocate available cash at each decision time).\\n\\nProjects:\\n(1) A 1-year product available at the **beginning of each year** (Years 1–3). If you invest I at the start of a year, you receive 1.20·I at that year’s end. Unlimited capacity.\\n(2) A 2-year product available **only at the beginning of Year 1**; it matures at the **end of Year 2** and pays 1.50·I. Investment in this product is capped at 120,000 yuan.\\n(3) A same-year product available **at the beginning of Year 2**, maturing at the **end of Year 2**, and paying 1.60·I. Investment is capped at 150,000 yuan.\\n(4) A 1-year product available **at the beginning of Year 3**, maturing at the **end of Year 3**, and paying 1.40·I. Investment is capped at 100,000 yuan.\\n\\nDecisions are made at the beginnings of Years 1–3 using only currently available cash (initial capital and proceeds from matured investments). Find the investment plan that maximizes total wealth at the end of Year 3.\",\n  \"en_answer\": \"964640\",\n  \"difficulty\": \"Medium\",\n  \"id\": 41\n}\n"
+  },
+  {
+    "id":45,
+    "修复原因":"原始答案有误",
+    "修改结果":"将题目答案由734改为700"
+  },
+  {
+    "id":46,
+    "修复原因":"原始叙述不清，原始答案错误",
+    "修改结果":"1、将ID=2的周三由6改为8, 周三由0改为9；将ID=5的周三由4改为5；将ID=6的周五由3改为5\n2、在题目结尾处增加“to minimize gross pay\"\n3、将答案由472.3修改为715.70"
+  },
+  {
+    "id":49,
+    "修复原因":"原始叙述不清",
+    "修改结果":"将题目替换为{\n\n\"en_question\": \"A factory must rent warehouse space for the next 4 months. The required warehouse area (in ㎡) is given in Table 1-14:\\n\\nTable 1-14\\n| Month | 1    | 2    | 3    | 4    |\\n|-------|------|------|------|------|\\n| Required area | 1500 | 1000 | 2000 | 1200 |\\n\\nThe factory can sign rental contracts of different lengths, with longer contracts offering discounted rates (Table 1-15). Each contract, once chosen, must cover consecutive months starting from the beginning of the period.\\n\\nTable 1-15\\n| Contract length (months) | 1  | 2  | 3  | 4  |\\n|--------------------------|----|----|----|----|\\n| Rental fee per 100㎡ (yuan) | 4000 | 7500 | 10500 | 13000 |\\n\\nAdditional business rules:\\n1. The company may rent **multiple warehouses** in parallel, and each warehouse contract must fully cover the selected months. The available capacity of each warehouse is unlimited (i.e., any contract can cover the full required area or part of it).\\n2. For risk management, at least **two different contracts** (with different lengths) must be signed over the 4 months.\\n3. If a 4-month contract is chosen, then no 1-month contract may be chosen (mutual exclusion).\\n4. To simplify operations, the number of distinct warehouse contracts signed cannot exceed 3.\\n5. The demand for each month must be fully satisfied without shortage or excess.\\n\\n**Decision variables:**\\n- Integer variables to represent how many contracts of each type (1, 2, 3, 4 months) are signed.\\n- Binary variables to encode logical conditions (e.g., exclusion between 1-month and 4-month contracts).\\n\\n**Objective:** Minimize the total rental cost over the 4 months.\\n\\nFormulate this as a Mixed Integer Linear Programming (MILP) model. What is the minimum total rental cost?\",\n\n\"en_answer\": \"208000.0\",\n\n\"difficulty\": \"Medium\",\n\n\"id\": 49\n\n}"
+  },
+  {
+    "id":58,
+    "修复原因":"原始答案有误",
+    "修改结果":"替换为{\"en_question\": \"Vicky and David have just bought a farm in the Yarra Valley, and they are considering using it to grow apples, pears, oranges, and lemons. The profit for growing one acre of apples is $2000, for one acre of pears is $1800, for one acre of oranges is $2200, and for one acre of lemons is $3000. To achieve maximum profit, how many acres of land should they use to grow each type of fruit? Vicky and David have just bought a farm in the Yarra Valley with a total area of 120 acres.\\n\\nThe land used to grow apples should be at least twice the land used to grow pears.\\n\\nThe land used to grow apples should be at least three times the land used to grow lemons.\\n\\nThe land used to grow oranges must be twice the land used to grow lemons.\\n\\nVicky and David are unwilling to grow more than two types of fruit.\", \"en_answer\": \"240000.0\", \"difficulty\": \"Easy\", \"id\": 58}\n"
+  },
+  {
+    "id":63,
+    "修复原因":"原始叙述不清",
+    "修改结果":"将题目替换为{\"en_question\": \"A farmer needs to transport 1000 units of fresh produce from the farm to a nearby market. The farmer has three transportation options: a horse, a bicycle, and a handcart. Since both the bicycle and handcart are very physically demanding, the farmer wants to choose only one of these two transportation methods. The horse generates 80 units of pollution per trip, the bicycle generates 0 units of pollution, and the handcart generates 0 units of pollution. The total amount of pollution generated by all trips must not exceed 1000 units. At least 8 trips must be made using the horse. The horse, bicycle, and handcart can carry 55 units, 30 units, and 40 units of produce per trip respectively. The farmer needs to ensure that the total amount of transported produce is at least 1000 units. How should the farmer arrange the transportation to minimize the pollution?\", \"en_answer\": \"640.0\", \"difficulty\": \"Easy\", \"id\": 63}"
+  },
+  {
+    "id":69,
+    "修复原因":"原始叙述不清",
+    "修改结果":"将题目替换为{\"en_question\": \"A steel reinforcement workshop produces a batch of steel bars (with the same diameter), consisting of 90 pieces of 3 meters in length and 60 pieces of 4 meters in length. It is known that each piece of raw steel bar used is 10 meters in length. How can the raw material be cut most efficiently? Establish a linear programming model for this problem to minimize the total waste.”, \"en_answer\": \"20.0\", \"difficulty\": \"Easy\", \"id\": 69}"
+  },
+  {
+    "id":73,
+    "修复原因":"原始答案有误",
+    "修改结果":"替换为{\"en_question\": \"The Li family has 5 children: Alice, Bob, Charlie, Diana, and Ella. The cost to take Alice is $1000, Bob is $900, Charlie is $600, Diana is $500, and Ella is $700. Which children should the couple take to minimize the total cost of taking the children?\\n\\nThey can take up to 3 children on the upcoming trip.\\n\\nBob is the youngest, so the Li family will definitely take him.\\n\\nIf the couple takes Alice, they will not take Diana because Alice does not get along with her.\\n\\nIf the couple takes Bob, they will not take Charlie because Bob does not get along with him.\\n\\nIf they take Charlie, they must also take Diana.\\n\\nIf they take Diana, they must also take Ella.\\n\\nDespite the cost, the Li family has decided to take at least two children.\", \"en_answer\": \"1600.0\", \"difficulty\": \"Easy\", \"id\": 73}\n"
+  },
+  {
+    "id":74,
+    "修复原因":"原始答案有误",
+    "修改结果":"替换为{\"en_question\": \"A project includes the following 7 activities, with their durations (in days) as follows: $A(4), B(3), C(5), D(2), E(10), F(10), G(1)$. The precedence relationships are also given as: $A \\\\rightarrow G, D ; E, G \\\\rightarrow F; D, F \\\\rightarrow C ; F \\\\rightarrow B$. The cost of work per day is 1000 Euros; additionally, a special machine must be rented from the start of activity $A$ to the end of activity $B$, costing 5000 Euros per day. Formulate this as a linear programming problem and solve it.\", \"en_answer\": \"115000\", \"difficulty\": \"Medium\", \"id\": 74}\n"
+  },
+  {
+    "id":77,
+    "修复原因":"原始答案有误",
+    "修改结果":"替换为{\"en_question\": \"There are 10 different parts, and they can all be processed on machine \\\\( A \\\\), machine \\\\( B \\\\), or machine \\\\( C \\\\). The unit processing costs are shown in Table 5-6. Additionally, as long as any part is processed on the aforementioned machines, a one-time setup cost will be incurred regardless of whether one or multiple types of parts are processed, with the respective costs being \\\\( d_A = 100 \\\\), \\\\( d_B = 135 \\\\), and \\\\( d_C = 200 \\\\) yuan. If the requirements are:\\n\\n1. One piece of each of the aforementioned 10 types of parts needs to be processed;\\n2. If the 1st part is processed on machine \\\\( A \\\\), then the 2nd part must be processed on machine \\\\( B \\\\) or \\\\( C \\\\); conversely, if the 1st part is processed on machine \\\\( B \\\\) or \\\\( C \\\\), then the 2nd part must be processed on machine \\\\( A \\\\);\\n3. Parts 3, 4, and 5 must be processed on machines A, B, and C respectively;\\n4. The number of parts processed on machine \\\\( C \\\\) should not exceed 3 types.\\n\\nTry to establish an integer programming mathematical model for this problem with the objective of minimizing the total cost.\\n\\nTable 5-6\\n| Machine\/Part | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |\\n|--------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|\\n| A            | $10$ | $20$ | $30$ | $40$ | $50$ | $60$ | $70$ | $80$ | $90$ | $100$ |\\n| B            | $15$ | $25$ | $35$ | $45$ | $55$ | $65$ | $75$ | $85$ | $95$ | $105$ |\\n| C            | $20$ | $30$ | $40$ | $50$ | $60$ | $70$ | $80$ | $90$ | $100$ | $110$ |\", \"en_answer\": \"1005.0\", \"difficulty\": \"Easy\", \"id\": 77}\n"
+  },
+  {
+    "id":78,
+    "修复原因":"原始答案有误",
+    "修改结果":"替换为{\"en_question\": \"A shoe store employs 5 full-time sales clerks and 4 part-time sales clerks. Their working hours and wage conditions are shown in Table 3.3.\\n\\nTable 3.3\\n\\n|  | Monthly Working Hours | Sales Volume (Pairs\/Hour) | Wage (Yuan\/Hour) | Overtime Pay (Yuan\/Hour) |\\n| :---: | :---: | :---: | :---: | :---: |\\n| Full-time | 160 | 5 | 1 | 1.5 |\\n| Part-time | 80 | 2 | 0.6 | 0.7 |\\n\\nEach pair of shoes sold earns a profit of 0.3 yuan. The store has set the following goals:\\n\\n$p_{1}$: Achieve monthly sales of 5500 pairs;\\n\\n$p_{2}$: Ensure full employment of all sales clerks;\\n\\n$p_{3}$: Minimize overtime hours.\\n\\nTry to establish a model for this problem.\", \"en_answer\": \"172\", \"difficulty\": \"Medium\", \"id\": 78}\n"
+  },
+  {
+    "id":80,
+    "修复原因":"原始叙述不清",
+    "修改结果":"将题目替换为{\n  \"en_question\": \"A company requires skilled workers and laborers for three tasks. The company must choose exactly one method to complete each task. The available methods and weekly hour requirements are:\\n\\n- **Task 1 (Requires 8,400 effective hours):**\\n  - Method A: Completed by skilled workers alone.\\n  - Method B: Completed by groups of one skilled worker and two laborers. There is a fixed weekly setup cost of 500 yuan for team coordination if this method is chosen.\\n\\n- **Task 2 (Requires 10,800 effective hours):**\\n  - Method A: Completed by skilled workers alone.\\n  - Method B: Completed by laborers alone.\\n\\n- **Task 3 (Requires 18,000 effective hours):**\\n  - Method A: Completed by groups of five laborers.\\n  - Method B: Completed by groups of one skilled worker and three laborers.\\n\\n**Wages and Hours:**\\n- Weekly wages: 100 yuan for skilled workers, 80 yuan for laborers.\\n- Effective working hours per week: 42 hours for skilled workers, 36 hours for laborers.\\n\\n**Recruitment and Policy Constraints:**\\n1. The number of workers is limited to a maximum of 400 skilled workers and 800 laborers.\\n2. **Exclusion Rule:** For efficiency reasons, if Task 1 uses the mixed-group method (Method B), then Task 3 cannot use the pure laborer method (Method A).\\n3. **Minimum Assignment:** To ensure quality, if the mixed-group method (Method B) is chosen for Task 3, a minimum of 20 skilled workers must be assigned to it.\\n4. **Hiring Policy:** The total number of skilled workers hired cannot exceed 60% of the total number of laborers hired.\\n\\nEstablish a mathematical model to determine which method to choose for each task and how many workers of each type to hire to minimize the total weekly cost (wages + fixed costs).\",\n  \"en_answer\": \"84000\",\n  \"difficulty\": \"Medium\",\n  \"id\": \"80\"\n}"
+  },
+  {
+    "id":85,
+    "修复原因":"原始叙述不清",
+    "修改结果":"将题目替换为{\n  \"en_question\": \"A company is producing two products (X and Y). Production is measured in standardized batches, and the weekly plan may involve fractional batches when appropriate. The resources required for X and Y are divided into two parts: machine time for automated processing and craftsman time for manual finishing. The table below shows the number of minutes required for each batch of product:\\n\\n| Item | Machine Time (minutes) | Craftsman Time (minutes) |\\n| :---: | :---: | :---: |\\n| X | 13 | 20 |\\n| Y | 19 | 29 |\\n\\nThe company has 40 hours of machine time available in the next working week, but only 35 hours of craftsman time. The cost of machine time is £10 per hour, and the cost of craftsman time is £2 per hour. Idle time for machines and craftsmen incurs no cost. For each batch produced (all batches produced will be sold), the revenue for product X is £20, and the revenue for product Y is £30. In addition, there is a contract that requires at least 10 batches of product X to be completed for a customer each week. Formulate a linear programming model to determine the weekly production plan that maximizes profit.\",\n  \"en_answer\": \"1866.37\",\n  \"difficulty\": \"Hard\",\n  \"id\": 85\n}\n"
+  },
+  {
+    "id":88,
+    "修复原因":"原始叙述不清",
+    "修改结果":"将题目替换为{\n  \"en_question\": \"A company operates two machines (Machine 1 and Machine 2) to produce two fertilizers: liquid and solid. Processing requirements are measured per standardized lot, and planning may use fractional lots when appropriate. Producing one lot of liquid requires 50 minutes on Machine 1 and 30 minutes on Machine 2. Producing one lot of solid requires 24 minutes on Machine 1 and 33 minutes on Machine 2. At the beginning of the week, on-hand inventories are 30 lots of liquid and 90 lots of solid. This week, Machine 1 has 40 available hours and Machine 2 has 35 available hours. Forecast demand for this week is 75 lots of liquid and 95 lots of solid. The company aims to maximize the total ending inventory of liquid and solid at the end of the week. Formulate a linear program.\",\n  \"en_answer\": \"1.25\",\n  \"difficulty\": \"Medium\",\n  \"id\": 88\n}\n"
+  },
+  {
+    "id":90,
+    "修复原因":"原始答案有误",
+    "修改结果":"替换为{\"en_question\": \"A store wants to clear out 200 shirts and 100 pairs of pants from last season. They decide to introduce two promotional packages, A and B. Package A includes one shirt and two pairs of pants, priced at £30. Package B includes three shirts and one pair of pants, priced at £50. The store does not want to sell fewer than 20 A packages and 10 B packages. How many of each package do they need to sell to maximize the revenue from the promotion?\\n\\nTry to establish a model for this problem.\", \"en_answer\": \"3600\", \"difficulty\": \"Medium\", \"id\": 90}\n"
+  },
+  {
+    "id":91,
+    "修复原因":"原始答案有误",
+    "修改结果":"改为原始92题答案"
+  },
+  {
+    "id":92,
+    "修复原因":"原始答案有误",
+    "修改结果":"改为原始91题答案"
+  },
+  {
+    "id":94,
+    "修复原因":"原始叙述不清，原始答案错误",
+    "修改结果":"替换为{\"en_question\": \"A company blends two types of crude oil (A and B) to produce two types of gasoline (Type I and Type II). The minimum proportion of crude oil A in gasoline Types I and II is 50% and 60%, respectively. The selling prices are 4800 yuan\/t and 5600 yuan\/t, respectively. The company has current inventories of 500 t of crude oil A and 1000 t of crude oil B, and they can purchase up to 1500 t of crude oil A from the market. The market price for crude oil A is: 10,000 yuan\/t for purchases up to 500 t; 8,000 yuan\/t for the portion exceeding 500 t but not exceeding 1000 t; 6,000 yuan\/t for the portion exceeding 1000 t. How should the company plan its purchasing and processing of crude oil?\", \"en_answer\": \"5000000\", \"difficulty\": \"Medium\", \"id\": 94}\n"
+  },
+  {
+    "id":96,
+    "修复原因":"原始叙述不清",
+    "修改结果":"将题目替换为{\n  \"en_question\": \"A steel pipe retailer purchases raw pipes from a steel mill and cuts them according to customer requirements before resale. Each raw steel pipe supplied by the mill has a length of 1850 mm. A customer has placed the following order: 15 pieces of 290 mm, 28 pieces of 315 mm, 21 pieces of 350 mm, and 30 pieces of 455 mm. To simplify the production process, the number of cutting patterns to be used may not exceed four. Additional costs are incurred depending on the usage frequency of each cutting pattern: the most frequently used cutting pattern incurs an extra cost equal to 1\/10 of the value of one raw pipe; the second most frequently used pattern incurs an extra cost equal to 2\/10; the third incurs 3\/10, and so forth. Moreover, under each cutting pattern, the number of cuts per raw pipe cannot be too many, with at most 5 pieces produced from a single raw pipe. To reduce material waste, the leftover length for any cutting pattern may not exceed 100 mm. The objective is to determine the cutting plan (selection of patterns and allocation of raw pipes) that minimizes the total cost. What is the optimal cutting plan and the total cost?\",\n  \"en_answer\": \"19.6\",\n  \"difficulty\": \"Medium\",\n  \"id\": 96\n}\n"
+  },
+  {
+    "id":97,
+    "修复原因":"原始答案有误",
+    "修改结果":"替换为{\"en_question\": \"A company mixes four types of liquid raw materials with different sulfur contents (denoted as A, B, C, and D, respectively) to produce two products (denoted as \\\\( \\\\mathrm{A} \\\\) and \\\\( \\\\mathrm{B} \\\\)). According to the production process requirements, raw materials A, B, and D must first be mixed in a mixing tank, and then the mixed liquid is further mixed with raw material C to produce \\\\( \\\\mathrm{A} \\\\) and \\\\( \\\\mathrm{B} \\\\). The sulfur contents of raw materials A, B, C, and D are \\\\( 3\\\\%, 1\\\\%, 2\\\\%, 1\\\\% \\\\) respectively, and their purchase prices are 6, 16, 10, 15 (thousand yuan per ton) respectively. The sulfur content of products \\\\( \\\\mathrm{A} \\\\) and \\\\( \\\\mathrm{B} \\\\) must not exceed \\\\( 2.5\\\\% \\\\) and \\\\( 1.5\\\\% \\\\) respectively, and their selling prices are 9.15 (thousand yuan per ton). According to market information, there is no limit to the supply of raw materials A, B, and C, but the supply of raw material D is limited to a maximum of 50 tons. The market demand for products \\\\( \\\\mathrm{A} \\\\) and \\\\( \\\\mathrm{B} \\\\) is 100 tons and 200 tons respectively. How should the production be arranged to maximize the profit?\", \"en_answer\": \"115\", \"difficulty\": \"Medium\", \"id\": 97}\n"
+  },
+  {
+    "id":98,
+    "修复原因":"原始叙述不清",
+    "修改结果":"将题目替换为{\"en_question\": \"A company uses steel and aluminum as raw materials to produce two products (A and B). A single unit of product A requires 6 kg of steel, 8 kg of aluminum, 11 hours of labor, and yields a profit of 5000 yuan (excluding worker overtime pay). A single unit of product B requires 12 kg of steel, 20 kg of aluminum, 24 hours of labor, and yields a profit of 11000 yuan (excluding worker overtime pay). The company currently has 200 kg of steel, 300 kg of aluminum, and 300 hours of labor available. If workers need to work overtime, the overtime pay is 100 yuan per hour. Please develop a production plan to maximize the company's profit with minimial worker overtime.\", \"en_answer\": \"137500.0\", \"difficulty\": \"Medium\", \"id\": 98}\n"
+  }
+]
