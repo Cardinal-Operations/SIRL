@@ -334,6 +334,6 @@ We conducted a preliminary review and correction of the NL4OPT, IndustryOR, MAMO
 We encourage other researchers to use these revised versions for their future work and consider cite our paper. Furthermore, we plan to conduct a more comprehensive review and add additional instances to the IndustryOR dataset.
 
 For any questions or issues regarding the datasets, please raise an issue on our GitHub repository or contact one of the authors via emails:
-   * Yitian Chen, chenyitian@shanshu.ai
+   * Yitian Chen, yitianartsky@gmail.com
    * Minglong Cao, mlcao25@m.fudan.edu.cn
    * Siyu Shao, siyu_shao@connect.hku.hk
